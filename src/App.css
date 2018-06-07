@@ -1,17 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|IBM+Plex+Mono");
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  background-image: url("https://survivetheark.com/uploads/monthly_2018_06/AEE3.jpg.f5b19fc8d86a60bb45144fc94ca53fe3.jpg");
+  height: 20rem;
+  padding: 10px;
   color: white;
+  font-size: 2em;
+  font-family: "Amatic SC", cursive;
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "Cinzel", serif;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .App-title {
@@ -21,8 +25,28 @@
 .App-intro {
   font-size: large;
 }
+select {
+  font-family: "Amatic SC", cursive;
+  font-family: "IBM Plex Mono", monospace;
+  font-family: "Cinzel", serif;  width: 30%;
+  height: 2.25rem;
+  border-color: black;
+  font-size: 0.5em;
+  border-width: 2px;
+}
+
+.searchbox-container {
+  
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+
+}
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
