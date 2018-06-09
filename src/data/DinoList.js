@@ -6,6 +6,8 @@ export default [
   oxygen:{L1: 0, W:0, T:0},
   food:{L1: 450, W:45, T:10},
   weight:{L1: 150, W:3, T:4},
+  'base damage':{L1: 150, W:3, T:4},
+
   },
   {
     name: 'Allosaurus',

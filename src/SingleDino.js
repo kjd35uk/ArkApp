@@ -1,27 +1,120 @@
 import React from "react";
-import Table from './Table'
+import ReactTable from "react-table";
+import "react-table/react-table.css";
 
 const SingleDino = ({ dino }) => {
   return (
-    <div className="single-dino">
-    <Table />
-      <h1>Name: {dino.name}</h1>
-      <h2>⚕️Health</h2>
-      <p>Level 1: {dino.health.L1}</p>
-      <p>Increase of health in the wild: {dino.health.W}</p>
-      <p>{dino.health.T}</p>
-      <p>{dino.stamina.L1}</p>
-      <p>{dino.stamina.W}</p>
-      <p>{dino.stamina.T}</p>
-      <p>{dino.oxygen.L1}</p>
-      <p>{dino.oxygen.W}</p>
-      <p>{dino.oxygen.T}</p>
-      <p>{dino.food.L1}</p>
-      <p>{dino.food.W}</p>
-      <p>{dino.food.T}</p>
-      <p>{dino.weight.L1}</p>
-      <p>{dino.weight.W}</p>
-      <p>{dino.weight.T}</p>
+    <div className="single-dino">{dino.name}
+     <ReactTable className = 'table'
+          data={[dino]}
+          columns={[
+            {
+              Header: "Health",
+              columns: [
+                {
+                  Header: "L1",
+                  accessor: "health.L1"
+                },
+                {
+                  Header: "W",
+                  accessor: "health.W",
+                },
+                {
+                  Header: "T",
+                  accessor: "health.T",
+                }
+              ]
+            },
+            {
+              Header: "Stamina",
+              columns: [
+                {
+                  Header: "L1",
+                  accessor: "stamina.L1"
+                },
+                {
+                  Header: "W",
+                  accessor: "stamina.W",
+                },
+                {
+                  Header: "T",
+                  accessor: "stamina.T",
+                }
+              ]
+            },
+            {
+              Header: 'Oxygen',
+              columns: [
+                {
+                  Header: "L1",
+                  accessor: "oxygen.L1"
+                },
+                {
+                  Header: "W",
+                  accessor: "oxygen.W",
+                },
+                {
+                  Header: "T",
+                  accessor: "oxygen.T",
+                }
+              ]
+            },
+            {
+              Header: 'Food',
+              columns: [
+                {
+                  Header: "L1",
+                  accessor: "food.L1"
+                },
+                {
+                  Header: "W",
+                  accessor: "food.W",
+                },
+                {
+                  Header: "T",
+                  accessor: "food.T",
+                }
+              ]
+            },
+            {
+              Header: 'Weight',
+              columns: [
+                {
+                  Header: "L1",
+                  accessor: "weight.L1"
+                },
+                {
+                  Header: "W",
+                  accessor: "weight.W",
+                },
+                {
+                  Header: "T",
+                  accessor: "weight.T",
+                }
+              ]
+            },
+            {
+              Header: 'Base Damage',
+              columns: [
+                {
+                  Header: "L1",
+                  accessor: "base damage.L1"
+                },
+                {
+                  Header: "W",
+                  accessor: "base damage.W",
+                },
+                {
+                  Header: "T",
+                  accessor: "base damage.T",
+                }
+              ]
+            }
+          ]}
+          defaultPageSize={10}
+          className="-striped -highlight"
+        />
+        <br />
     </div>
   );
 };

@@ -4,7 +4,6 @@ import SearchBox from "./SearchBox";
 import Dinos from "./Dinos";
 import SingleDino from "./SingleDino";
 import DinoList from "./data/DinoList";
-import Table from "./Table";
 
 
 class App extends Component {
@@ -31,7 +30,6 @@ class App extends Component {
             dinos={this.state.DinoList}
           />
         </header>
-        {/* <Table /> */}
         {this.state.dino.name ? <SingleDino dino={this.state.dino}/> :  <Dinos dinos={this.state.DinoList} />}
       </div>
     );

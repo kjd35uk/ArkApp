@@ -1,9 +1,11 @@
 import React from "react";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
+import DinoList from "./data/DinoList";
 
 class Table extends React.Component {
   render() {
+    const data = DinoList;
   return (
     <div>TABLE HERE
        <ReactTable
