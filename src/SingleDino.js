@@ -3,8 +3,7 @@ import React from "react";
 const SingleDino = ({ dino }) => {
   return (
     <div className="single-dino">
-      <h1>Dino name: {dino.name}</h1>
-      <p>Dino name: {dino.name}</p>
+      <h1>Name: {dino.name}</h1>
       <h2>⚕️Health</h2>
       <p>Level 1: {dino.health.L1}</p>
       <p>Increase of health in the wild: {dino.health.W}</p>

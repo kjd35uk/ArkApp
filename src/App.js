@@ -5,6 +5,7 @@ import Dinos from "./Dinos";
 import SingleDino from "./SingleDino";
 import DinoList from "./data/DinoList";
 
+
 class App extends Component {
   state = {
     DinoList,

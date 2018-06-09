@@ -15,16 +15,15 @@ body{
 .App-header {
   background-image: url("./dinopic.jpg");
   height: 14rem;
-  padding: 10px;
   color: white;
   font-size: 2em;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .App-title {
   font-size: 1.5em;
+  margin-top: 0.25em;
 }
 
 .App-intro {
@@ -39,7 +38,7 @@ select {
 
 .searchbox-container {
   padding-bottom: 2rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .dino-container {
