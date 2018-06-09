@@ -7,6 +7,7 @@ export default [
   food:{L1: 450, W:45, T:10},
   weight:{L1: 150, W:3, T:4},
   'base damage':{L1: 150, W:3, T:4},
+  info: ['Behaviour: Achatina is one of the few truly docile creatures on the Island','Preferred Food: Sweet Vegetable Cake', 'Taming: Since damage is significantly reduced by the shell, it is best to hit it on the soft, fleshy parts instead. If it takes enough damage, it will retreat into its shell, making it very easy to kill it before the torpor from tranquilizers can knock it out. Use  Shocking Tranquilizer Darts or normal Tranquilizer Darts to minimise risk.', 'General: Shortly after being engaged, the Achatina will retreat into its shell: it will neither flee nor fight back. Damage dealt to the Achatina will be heavily reduced for as long as it is inside of its shell.', 'Strategy: Although the Achatina itself is not dangerous, its surroundings are usually filled with predators. Clear the area of hostile creatures before attempting to tame']
 
   },
   {
