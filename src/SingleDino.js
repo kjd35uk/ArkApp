@@ -1,8 +1,10 @@
 import React from "react";
+import Table from './Table'
 
 const SingleDino = ({ dino }) => {
   return (
     <div className="single-dino">
+    <Table />
       <h1>Name: {dino.name}</h1>
       <h2>⚕️Health</h2>
       <p>Level 1: {dino.health.L1}</p>
