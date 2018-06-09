@@ -1,8 +1,8 @@
 import React from "react";
 
-const SearchBox = ({handleChange}) => {
+const SearchBox = ({handleChange, dinos}) => {
  
-    const options = ['Achatina', 'Allosaurus', 'Alpha Basilisk', 'Alpha Carnotaurus', 'Alpha Deathworm', 'Alpha Fire Wyvern', 'Alpha Karkinos', 'Alpha Leedsichthys', 'Alpha Megalodon'];
+    const options = dinos.map(dino => dino.name);
 
     return (
       <div className="searchbox-container">

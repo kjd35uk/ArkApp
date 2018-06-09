@@ -15,7 +15,6 @@ class App extends Component {
       oxygen: { L1: 0, W: 0, T: 0 },
       food: { L1: 0, W: 0, T: 0 },
       weight: { L1: 0, W: 0, T: 0 },
-      imageURL: ""
     }
   };
 
@@ -27,6 +26,7 @@ class App extends Component {
           <h1 className="App-title">Happy birthday, Michael!</h1>
           <SearchBox
             handleChange={this.handleChange}
+            dinos={this.state.DinoList}
           />
         </header>
         {this.state.dino.name ? <SingleDino dino={this.state.dino}/> :  <Dinos dinos={this.state.DinoList} />}

@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|IBM+Plex+Mono");
 
+body{
+  margin:0;
+  padding:0;
+}
 .App {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-family: "IBM Plex Mono", monospace;
   font-family: "Cinzel", serif;
+ 
 }
 
 .App-header {
@@ -38,14 +43,24 @@ select {
 }
 
 .dino-container {
-  width: 100%;
-  background-repeat: no-repeat;
+  width: 98%;
+  /* background-repeat: no-repeat; */
   background-size: 100%;
   background-image: url("./sunset.jpg");
   background-size: "cover";
-  height: "35rem";
-  display: flex;
+  height: "70rem";
+  display:grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+  /* display: flex;
+  flex-direction: row; */
   color: whitesmoke;
+  margin:auto;
+  margin-top:1em;
+  padding:auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* margin:20px; */
 }
 .dino-unit{
   /* margin:auto;
@@ -55,11 +70,20 @@ select {
 }
 .single-dino {
   text-align: left;
+  margin:auto;
+  padding-left: 2em;
 }
 
 .dino-image {
   width: 9em;
   height: 6em;
+  margin-left: 10px;
+
+}
+
+h3{
+  margin:auto;
+  margin-left: 10px;
 }
 @keyframes App-logo-spin {
   from {

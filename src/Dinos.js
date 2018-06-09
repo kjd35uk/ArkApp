@@ -6,7 +6,7 @@ const Dinos = ({ dinos }) => {
       {dinos.map(dino => {
         return (
           <div className = 'dino-unit'>
-            <div><h2>{dino.name}</h2></div>
+            <div><h3>{dino.name}</h3></div>
             <div><img className = 'dino-image' src={require(`./public/images/${dino.name}.jpg`)} /></div>
           </div>
         );
