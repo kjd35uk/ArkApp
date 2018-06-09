@@ -1,8 +1,8 @@
 import React from "react";
 
-function SearchBox ({handleChange}) {
+const SearchBox = ({handleChange}) => {
  
-    const options = ['Amphibians', 'Birds', 'Dinosaurs', 'Fish', 'Invertibrates', 'Mammals', 'Reptiles', 'Synapsids', 'Bobby'];
+    const options = ['Achatina', 'Allosaurus', 'Alpha Basilisk', 'Alpha Carnotaurus', 'Alpha Deathworm', 'Alpha Fire Wyvern', 'Alpha Karkinos', 'Alpha Leedsichthys', 'Alpha Megalodon'];
 
     return (
       <div className="searchbox-container">

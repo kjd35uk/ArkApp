@@ -1,56 +1,44 @@
-import React, { Component } from 'react';
-import './App.css';
-import SearchBox from './SearchBox/SearchBox'
-import DinoDisplay from './DinoDisplay/DinoDisplay'
-import DinoList from './data/DinoList'
-
+import React, { Component } from "react";
+import "./App.css";
+import SearchBox from "./SearchBox";
+import Dinos from "./Dinos";
+import SingleDino from "./SingleDino";
+import DinoList from "./data/DinoList";
 
 class App extends Component {
   state = {
-    dinos:[],
+    DinoList,
     dino: {
-      species: '',
-      name: '',
-      health: {},
-      stamina:{},
-      oxygen:{},
-      food:{},
-      weight:{},
-      imageURL: ''
+      name: "",
+      health: { L1: 0, W: 0, T: 0 },
+      stamina: { L1: 0, W: 0, T: 0 },
+      oxygen: { L1: 0, W: 0, T: 0 },
+      food: { L1: 0, W: 0, T: 0 },
+      weight: { L1: 0, W: 0, T: 0 },
+      imageURL: ""
     }
   };
-  componentDidMount = async () => {
-    const dinos = [...this.state.dinos, ...DinoList]
-    this.setState({ dinos })
-  }
 
   render() {
-    console.log(this.state.dinos, 'dinos')
+    console.log(this.state.dino, "dino");
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Happy birthday, Michael!</h1>
-          <SearchBox handleChange={this.handleChange}/>
+          <SearchBox
+            handleChange={this.handleChange}
+          />
         </header>
-        {DinoList.map(dino => <p>{dino.name}</p>)}
-        <DinoDisplay dino={this.state.dino}/>
+        {this.state.dino.name ? <SingleDino dino={this.state.dino}/> :  <Dinos dinos={this.state.DinoList} />}
       </div>
     );
   }
-
+ 
   handleChange = ({ target: { value } }) => {
-    this.setState({
-      value
-    });
-  }
-  handleChange = ({target:{value}}) => {
-    console.log(value, 'VALUE')
     const newDino = value;
     const filteredDinos = DinoList.filter(({ name }) => {
       return name === newDino;
     });
-    console.log(filteredDinos, 'FILTERED')
-
     this.setState({
       dino: filteredDinos[0]
     });
