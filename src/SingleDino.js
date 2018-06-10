@@ -11,8 +11,27 @@ const SingleDino = ({ dino }) => {
           className="dino-image-large"
           src={require(`./public/images/${dino.name}.jpg`)}
         />
-        <ul>{dino.info.map(point => <li className='dino-tips'>{point}</li>)}</ul>
+        <div className = 'dino-list' >
+        {dino.info.map(dino => {
+          for (let key in dino) {
+return (
+  <div >
+  <ul>
+<h4 className = 'dinolist-heading'>{key}</h4>
+<li>{dino[key]}</li>
+</ul>
+</div>
+          )
+         
+        }
+      
+      })}
+        </div>
       </div>
+      <h2>Key:</h2>
+      W is the increase per level in the wild<br/>
+      T - is the increase per level domesticated / tamed in percent of the value when the creature was just tamed <br/>
+For example, if an Ankylosaurus has 2000 healthpoints after taming, the increase per level is 124 (6.2% of 2000). <br/>
       <ReactTable
         className="table"
         data={[dino]}
