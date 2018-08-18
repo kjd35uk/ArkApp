@@ -8,10 +8,28 @@ const SingleDino = ({ dino }) => {
       <h1>{dino.name}</h1>
       <div className="intro-block">
         <img
+          alt="dinosaur"
           className="dino-image-large"
           src={require(`./public/images/${dino.name}.jpg`)}
         />
-        <div className = 'dino-list' >
+           <div className = 'dino-list' >
+            <div>
+             <h1>Behaviour:</h1>
+             <p className = 'behaviour'>{dino.info[0].Behaviour}</p>
+            </div>
+            <div>
+              <h1>Preferred Food: </h1> <p className = 'behaviour'>{dino.info[1]['Preferred Food']}</p>
+            </div>
+           </div>
+           </div>
+        <div className="intro-block-2">
+        <h2>Taming:</h2> <ul>{dino.info[2].Taming}</ul>
+        <h2>General:</h2> <ul>{dino.info[3].General}</ul>
+        <h2>Strategy:</h2> <ul>{dino.info[4].Strategy}</ul>
+        </div>
+<br></br>
+
+        {/* <div className = 'dino-list' >
         {dino.info.map(dino => {
           for (let key in dino) {
 return (
@@ -21,13 +39,9 @@ return (
 <li>{dino[key]}</li>
 </ul>
 </div>
-          )
-         
-        }
-      
+          )}
       })}
-        </div>
-      </div>
+        </div> */}
       <h2>Key:</h2>
       W is the increase per level in the wild<br/>
       T - is the increase per level domesticated / tamed in percent of the value when the creature was just tamed <br/>
@@ -143,7 +157,7 @@ For example, if an Ankylosaurus has 2000 healthpoints after taming, the increase
         Footer="undefined"
         previousText=""
         nextText=""
-        className="-striped -highlight"
+        // className="-striped -highlight"
         showPagination="false"
         showPageSizeOptions="false"
         showPageJump="false"

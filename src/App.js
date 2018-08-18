@@ -20,7 +20,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.dino, "dino");
     return (
       <div className="App">
         <header className="App-header">

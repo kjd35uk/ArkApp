@@ -32,6 +32,9 @@ body{
   margin-top: 0.25em;
   margin-bottom: 0.5rem;
 }
+ .behaviour {
+   font-size: x-large;
+ }
 
 .dino-container {
   width: 98%;
@@ -60,6 +63,10 @@ body{
   height: 20em;
   margin-left: 0;
   padding-top: 1em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow:none;
+  object-fit: cover;
 }
 
 .dino-list{
@@ -98,6 +105,12 @@ h3{
   margin:2;
   border-spacing:2;
   column-gap: 2;
+}
+.intro-block-2 {
+  padding-right: 20px;
+}
+li {
+  font-size: large;
 }
 
 .ReactTable .-pagination {
@@ -147,6 +160,7 @@ ul{
   padding-left:0;
   text-align: justify;
   text-justify: inter-word;
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
