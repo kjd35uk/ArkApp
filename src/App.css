@@ -105,6 +105,9 @@ h3{
   margin: 3px 10px;
   position: absolute;
 }
+.rt-td {
+  text-align: center;
+}
 
 .searchbox-container {
   padding-bottom: 2rem;
