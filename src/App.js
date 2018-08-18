@@ -30,7 +30,7 @@ class App extends Component {
             dinos={this.state.DinoList}
           />
         </header>
-        {this.state.dino.name ? <SingleDino dino={this.state.dino}/> :  <Dinos dinos={this.state.DinoList} />}
+        {this.state.dino ? this.state.dino.name ? <SingleDino dino={this.state.dino}/> :  <Dinos dinos={this.state.DinoList}/> : <Dinos dinos={this.state.DinoList}/>}
       </div>
     );
   }
