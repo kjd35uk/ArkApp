@@ -5,13 +5,15 @@ import "react-table/react-table.css";
 const SingleDino = ({ dino }) => {
   return (
     <div className="single-dino">
-      <h1>{dino.name}</h1>
+      <h1 className = 'dino-name-title'>{dino.name}</h1>
       <div className="intro-block">
+      <div className = 'image-container'>
         <img
           alt="dinosaur"
           className="dino-image-large"
           src={require(`./public/images/${dino.name}.jpg`)}
         />
+        </div>
            <div className = 'dino-list' >
             <div>
              <h1>Behaviour:</h1>
