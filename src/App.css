@@ -14,7 +14,7 @@ body{
 
 .App-header {
   background-image: url("./dinopic.jpg");
-  height: 14rem;
+  height: 20rem;
   color: white;
   font-size: 2em;
   width: 100%;
@@ -28,7 +28,7 @@ body{
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-top: 0.25em;
   margin-bottom: 0.5rem;
 }
@@ -43,7 +43,7 @@ body{
   background-size: "cover";
   height: "70rem";
   display:grid;
-  grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   color: whitesmoke;
   margin:auto;
   margin-top:1em;
@@ -52,10 +52,14 @@ body{
   justify-content: space-between;
 }
 
+.dino-grid-name{
+  font-size: x-large;
+}
 .dino-image {
-  width: 9em;
+  width: 10em;
   height: 6em;
   margin-left: 10px;
+  margin-bottom: 1rem;
 }
 
 .dino-image-large {
@@ -135,7 +139,7 @@ li {
 
 .searchbox-container {
   padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 select {
