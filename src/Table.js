@@ -96,21 +96,21 @@ class Table extends React.Component {
                 }
               ]
             },
-            {
-              Header: 'Base Damage',
-              columns: [
-                {
-                  Header: "L1",
-                  accessor: "Base Damage.L1"
-                },
-                {
-                  Header: "W",
-                  accessor: "Base Damage.W",
-                },
-                {
-                  Header: "T",
-                  accessor: "Base Damage.T",
-                }
+            // {
+            //   Header: 'Base Damage',
+            //   columns: [
+            //     {
+            //       Header: "L1",
+            //       accessor: "Base Damage.L1"
+            //     },
+            //     {
+            //       Header: "W",
+            //       accessor: "Base Damage.W",
+            //     },
+            //     {
+            //       Header: "T",
+            //       accessor: "Base Damage.T",
+            //     }
               ]
             }
           ]}

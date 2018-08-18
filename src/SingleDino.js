@@ -121,23 +121,23 @@ For example, if an Ankylosaurus has 2000 healthpoints after taming, the increase
               }
             ]
           },
-          {
-            Header: "Base Damage",
-            columns: [
-              {
-                Header: "L1",
-                accessor: "base damage.L1"
-              },
-              {
-                Header: "W",
-                accessor: "base damage.W"
-              },
-              {
-                Header: "T",
-                accessor: "base damage.T"
-              }
-            ]
-          }
+          // {
+          //   Header: "Base Damage",
+          //   columns: [
+          //     {
+          //       Header: "L1",
+          //       accessor: "base damage.L1"
+          //     },
+          //     {
+          //       Header: "W",
+          //       accessor: "base damage.W"
+          //     },
+          //     {
+          //       Header: "T",
+          //       accessor: "base damage.T"
+          //     }
+          //   ]
+          // }
         ]}
         defaultPageSize={1}
         Footer="undefined"

@@ -4,12 +4,12 @@ body{
   margin:0;
   padding:0;
 }
+
 .App {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-family: "IBM Plex Mono", monospace;
   font-family: "Cinzel", serif;
- 
 }
 
 .App-header {
@@ -19,59 +19,49 @@ body{
   font-size: 2em;
   width: 100%;
   background-repeat: no-repeat;
-}
-
-.App-title {
-  font-size: 1.5em;
-  margin-top: 0.25em;
+  background-size: cover;
+  padding-top: 2rem;
 }
 
 .App-intro {
   font-size: large;
 }
-select {
-  height: 2.25rem;
-  border-color: black;
-  font-size: 0.5em;
-  border-width: 2px;
-}
 
-.searchbox-container {
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+.App-title {
+  font-size: 1.5em;
+  margin-top: 0.25em;
+  margin-bottom: 0.5rem;
 }
 
 .dino-container {
   width: 98%;
-  /* background-repeat: no-repeat; */
   background-size: 100%;
   background-image: url("./sunset.jpg");
   background-size: "cover";
   height: "70rem";
   display:grid;
   grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
-  /* display: flex;
-  flex-direction: row; */
   color: whitesmoke;
   margin:auto;
   margin-top:1em;
   padding:auto;
   flex-wrap: wrap;
   justify-content: space-between;
+}
 
-  /* margin:20px; */
+.dino-image {
+  width: 9em;
+  height: 6em;
+  margin-left: 10px;
 }
-.dino-unit{
-  /* margin:auto;
-  width: 95%; */
-  display: inline-block;
-  justify-content: center;
+
+.dino-image-large {
+  width: 35em;
+  height: 20em;
+  margin-left: 0;
+  padding-top: 1em;
 }
-.single-dino {
-  text-align: left;
-  margin:auto;
-  padding-left: 2em;
-}
+
 .dino-list{
   order:2;
   justify-content: flex-end;
@@ -79,46 +69,24 @@ select {
   padding-right: 1em;
   padding-top: 0;
   margin-top: 0;
+  }
 
-}
-.dino-image {
-  width: 9em;
-  height: 6em;
-  margin-left: 10px;
+  .dinolist-heading{
+    display: inline;
+  }
 
-}
-.dino-image-large {
-  width: 20em;
-  height: 20em;
-  margin-left: 0;
-  padding-top: 1em;
-  /* order: 1; */
-}
 .dino-tips {
   margin-left: 10px;
-}
+  }
 
-ul{
-  margin-left: 0;
-  text-align: left;
-  padding-left:0;
-  text-align: justify;
-  text-justify: inter-word;
+.dino-unit{
+  display: inline-block;
+  justify-content: center;
 }
 
 h3{
   margin:auto;
   margin-left: 10px;
-}
-
-.table{
-  text-align: center;
-}
-
-.ReactTable .-pagination {
-  visibility: hidden;
-  margin: 3px 10px;
-  position: absolute;
 }
 
 .intro-block {
@@ -132,8 +100,50 @@ h3{
   column-gap: 2;
 }
 
-.dinolist-heading{
-  display: inline;
+.ReactTable .-pagination {
+  visibility: hidden;
+  margin: 3px 10px;
+  position: absolute;
+}
+
+.searchbox-container {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+select {
+  height: 2.25rem;
+  border-color: black;
+  font-size: 0.5em;
+  border-width: 2px;
+}
+
+.select-button{
+width: 16em;
+height: 2em;
+font-family: "Amatic SC", cursive;
+font-family: "IBM Plex Mono", monospace;
+font-family: "Cinzel", serif;
+font-size: 1em;
+}
+
+.single-dino {
+  text-align: left;
+  margin:auto;
+  padding-left: 2em;
+  background-color: rgba(255, 166, 0, 0.404);
+}
+
+.table{
+  text-align: center;
+}
+
+ul{
+  margin-left: 0;
+  text-align: left;
+  padding-left:0;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 @keyframes App-logo-spin {

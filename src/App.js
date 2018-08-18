@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Happy birthday, Michael!</h1>
+          <h1 className="App-title">Welcome home, Michael!</h1>
           <SearchBox
             handleChange={this.handleChange}
             dinos={this.state.DinoList}

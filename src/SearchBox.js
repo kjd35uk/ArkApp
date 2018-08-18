@@ -6,10 +6,10 @@ const SearchBox = ({handleChange, dinos}) => {
 
     return (
       <div className="searchbox-container">
-      <select onChange={handleChange}>
-        <option font='Amatic SC'value="">Select your dino here</option>
+      <select className = 'select-button' onChange={handleChange}>
+        <option font='Amatic SC'value="">Select your creature here</option>
         {options.map((dino, i) => (
-          <option key={i} value={dino}>
+          <option key={i} font='Amatic SC' value={dino}>
             {dino}
           </option>
         ))}
