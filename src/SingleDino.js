@@ -160,10 +160,10 @@ For example, if an Ankylosaurus has 2000 healthpoints after taming, the increase
         previousText=""
         nextText=""
         // className="-striped -highlight"
-        showPagination="false"
-        showPageSizeOptions="false"
-        showPageJump="false"
-        showPaginationBottom="false"
+        showPagination={false}
+        showPageSizeOptions={false}
+        showPageJump={false}
+        showPaginationBottom={false}
       />
       <br />
     </div>
